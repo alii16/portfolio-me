@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="smooth-scroll">
 
 <head>
     <meta charset="utf-8">
@@ -9,6 +9,7 @@
     <link rel="icon" href="assets/imgs/icon.png" type="image/png">
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -16,34 +17,48 @@
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light"
+                <li class="social-item"><a class="social-link text-light" target="_blank"
                         href="https://www.facebook.com/polanunu.dah?mibextid=ZbWKwL"><i class="ti-facebook"
                             aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-stack-overflow"
+                <li class="social-item"><a class="social-link text-light" target="_blank" href="https://www.youtube.com/@alipolanunu4829"><i class="ti-youtube"
                             aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/alii-polanunu/"><i class="ti-linkedin"
+                <li class="social-item"><a class="social-link text-light" target="_blank" href="https://www.linkedin.com/in/alii-polanunu/"><i class="ti-linkedin"
                             aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light"
+                <li class="social-item"><a class="social-link text-light" target="_blank"
                         href="https://www.instagram.com/aliiwithahoodie/"><i class="ti-instagram"
                             aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://github.com/alii16"><i
+                <li class="social-item"><a class="social-link text-light" target="_blank" href="https://github.com/alii16"><i
                             class="ti-github" aria-hidden="true"></i></a></li>
             </ul>
             <div class="header-content">
                 <h4 class="header-subtitle">Hello there!👋, I am</h4>
                 <h1 class="header-title">Syalli Polanunu</h1>
-                <h6 class="header-mono">Web Developer | Student</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+                <h6 class="header-mono" style="margin-top: 40px;">
+                    <i class="ti-user mr-2" aria-hidden="true"></i>
+                    <span id="typing-effect"></span>
+                    <span class="cursor">|</span>
+                </h6>            
+
+                <a href="assets/pdf/CV-SYALLI-POLANUNU.png" download="CV-SYALLI-POLANUNU.png">
+                    <button class="btn btn-primary btn-rounded">
+                        <i class="ti-printer pr-2"></i> Print Resume
+                    </button>
+                </a>
             </div>
         </div>
     </header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
+            <div class="navbar-brand-mobile d-lg-none mr-auto"> 
+                <h5 class="brand-title mobile-header mb-0">Syalli Polanunu</h5>
+            </div>
+
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -56,7 +71,7 @@
                         <a href="#resume" class="nav-link">Resume</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav brand">
+                <ul class="navbar-nav brand d-none d-lg-flex">
                     <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Syalli Polanunu</h5>
@@ -79,15 +94,19 @@
     </nav>
     <div class="container-fluid">
         <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
+            <div class="col-lg-4 about-card" data-aos="fade-up" data-aos-duration="1000">
                 <h3 class="font-weight-light">Who am I ?</h3>
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">A Web Designer / Developer Located In Our Lovely Earth</h5>
                 <p class="mt-20">Hello there! I am Syalli Polanunu a Front End Developer and Web Designer, now I am a 5th
                     semester student at ITB Stikom Ambon</p>
-                <button class="btn btn-outline-danger btn-rounded"><i class="icon-down-circled2 "></i>Download My CV</button>
+                <a href="https://drive.google.com/file/d/1SpFXP4u5bL23rT_Ds6WFXSSIWJ-BFmgQ/view?usp=drive_link" target="_blank">
+                    <button class="btn btn-outline-danger btn-rounded">
+                        <i class="icon-down-circled2"></i> Download My CV
+                    </button>
+                </a>
             </div>
-            <div class="col-lg-4 about-card">
+            <div class="col-lg-4 about-card" data-aos="fade-up" data-aos-duration="1000">
                 <h3 class="font-weight-light">Personal Info</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
@@ -98,20 +117,20 @@
                     <li><span>Address</span> : Stain, Ambon, Indonesia</li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link"
+                    <li class="social-item"><a class="social-link" target="_blank"
                             href="https://www.facebook.com/polanunu.dah?mibextid=ZbWKwL"><i class="ti-facebook"
                                 aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-stack-overflow"
+                    <li class="social-item"><a class="social-link" target="_blank" href="https://www.youtube.com/@alipolanunu4829"><i class="ti-youtube"
                                 aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/alii-polanunu/"><i class="ti-linkedin"
+                    <li class="social-item"><a class="social-link" target="_blank" href="https://www.linkedin.com/in/alii-polanunu/"><i class="ti-linkedin"
                                 aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/aliiwithahoodie/"><i
+                    <li class="social-item"><a class="social-link" target="_blank" href="https://www.instagram.com/aliiwithahoodie/"><i
                                 class="ti-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/alii16"><i class="ti-github"
+                    <li class="social-item"><a class="social-link" target="_blank" href="https://github.com/alii16"><i class="ti-github"
                                 aria-hidden="true"></i></a></li>
                 </ul>
             </div>
-            <div class="col-lg-4 about-card">
+            <div class="col-lg-4 about-card" data-aos="fade-up" data-aos-duration="1000">
                 <h3 class="font-weight-light">My Expertise</h3>
                 <span class="line mb-5"></span>
                 <div class="row">
@@ -222,27 +241,27 @@
                         <div class="card-body pb-2">
                             <h6>HTML5 &amp; CSS3</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" data-value="80%"
+                                    style="width: 0;" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>JavaScript</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 35%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" data-value="35%"
+                                    style="width: 0;" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>PHP</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" data-value="65%"
+                                    style="width: 0;" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>SQL</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" data-value="70%"
+                                    style="width: 0;" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card mt-3">
                         <div class="card-header">
                             <div class="pull-left">
                                 <h4 class="mt-2">Languages</h4>
@@ -252,17 +271,18 @@
                         <div class="card-body pb-2">
                             <h6>Indonesian</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" data-value="95%"
+                                    style="width: 0;" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>English</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" data-value="75%"
+                                    style="width: 0;" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -276,9 +296,10 @@
                             <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">410</h1>
+                            <h1 class="count text-danger font-weight-bold font40" data-target="410">0</h1>
                             <p class="text-light mb-1">Hours Worked</p>
                         </div>
+     
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -287,7 +308,7 @@
                             <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">29</h1>
+                            <h1 class="count text-danger font-weight-bold font40" data-target="29">0</h1>
                             <p class="text-light mb-1">Project Finished</p>
                         </div>
                     </div>
@@ -298,7 +319,7 @@
                             <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">52</h1>
+                            <h1 class="count text-danger font-weight-bold font40" data-target="52">0</h1>
                             <p class="text-light mb-1">Happy Clients</p>
                         </div>
                     </div>
@@ -309,7 +330,7 @@
                             <div class="m-auto"><i class="ti-eye icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">590</h1>
+                            <h1 class="count text-danger font-weight-bold font40" data-target="590">0</h1>
                             <p class="text-light mb-1">Project Views</p>
                         </div>
                     </div>
@@ -323,7 +344,7 @@
             <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
+                    <div class="card mb-5" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-header has-icon">
                             <i class="ti-ruler-pencil text-danger" aria-hidden="true"></i>
                         </div>
@@ -335,7 +356,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
+                    <div class="card mb-5" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-header has-icon">
                             <i class="ti-video-clapper text-danger" aria-hidden="true"></i>
                         </div>
@@ -347,7 +368,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
+                    <div class="card mb-5" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-header has-icon">
                             <i class="ti-layers-alt text-danger" aria-hidden="true"></i>
                         </div>
@@ -367,7 +388,7 @@
             <h1 class="mb-5"><span class="text-danger">My Services</span> Price</h1>
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
+                    <div class="price-card text-center mb-4" data-aos="fade-up" data-aos-duration="1000">
                         <h3 class="price-card-title">Free</h3>
                         <div class="price-card-cost">
                             <sup class="ti-money"></sup>
@@ -379,12 +400,12 @@
                             <li class="list-item" style="visibility: hidden;">.<span class="text-muted">.</span></li>
                             <li class="list-item" style="visibility: hidden;">.<span class="text-muted">.</span></li>
                         </ul>
-                        <a href="https://www.instagram.com/aliiwithahoodie/" target="_blank"
-                            class="btn btn-primary btn-rounded w-lg">Subscribe</a>
+                        <a href="https://wa.me/6282120791879?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Konsultasi%20(Free)." 
+                            target="_blank" class="btn btn-primary btn-rounded w-lg">Subscribe</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
+                    <div class="price-card text-center mb-4" data-aos="fade-up" data-aos-duration="1000">
                         <h3 class="price-card-title">Basic</h3>
                         <div class="price-card-cost">
                             <sup class="ti-money"></sup>
@@ -396,12 +417,12 @@
                             <li class="list-item" style="visibility: hidden;">.<span class="text-muted">.</span></li>
                             <li class="list-item" style="visibility: hidden;">.<span class="text-muted">.</span></li>
                         </ul>
-                        <a href="https://www.instagram.com/aliiwithahoodie/" target="_blank"
-                            class="btn btn-primary btn-rounded w-lg">Subscribe</a>
+                        <a href="https://wa.me/6282120791879?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Basic%20($3)." 
+                            target="_blank" class="btn btn-primary btn-rounded w-lg">Subscribe</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center price-card-requried mb-4">
+                    <div class="price-card text-center price-card-requried mb-4" data-aos="fade-up" data-aos-duration="1000">
                         <h3 class="price-card-title">Exclusive</h3>
                         <div class="price-card-cost">
                             <sup class="ti-money"></sup>
@@ -413,12 +434,12 @@
                             <li class="list-item" style="visibility: hidden;">.<span class="text-muted">.</span></li>
                             <li class="list-item" style="visibility: hidden;">.<span class="text-muted">.</span></li>
                         </ul>
-                        <a href="https://www.instagram.com/aliiwithahoodie/" target="_blank"
-                            class="btn btn-primary btn-rounded w-lg">Subscribe</a>
+                        <a href="https://wa.me/6282120791879?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Exclusive%20($5)." 
+                            target="_blank" class="btn btn-primary btn-rounded w-lg">Subscribe</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
+                    <div class="price-card text-center mb-4" data-aos="fade-up" data-aos-duration="1000">
                         <h3 class="price-card-title">Pro</h3>
                         <div class="price-card-cost">
                             <sup class="ti-money"></sup>
@@ -430,18 +451,44 @@
                             <li class="list-item" style="visibility: hidden;">.<span class="text-muted">.</span></li>
                             <li class="list-item" style="visibility: hidden;">.<span class="text-muted">.</span></li>
                         </ul>
-                        <a href="https://www.instagram.com/aliiwithahoodie/" target="_blank"
-                            class="btn btn-primary btn-rounded w-lg">Subscribe</a>
+                        <a href="https://wa.me/6282120791879?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Pro%20($25)." 
+                            target="_blank" class="btn btn-primary btn-rounded w-lg">Subscribe</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="section bg-dark py-5">
         <div class="container text-center">
             <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
-            <a href="https://www.instagram.com/aliiwithahoodie/" target="_blank" class="btn btn-primary btn-rounded w-lg">Hire
-                Me</a>
+            <style>
+                @keyframes pulse {
+                    0% {
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.1);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+            
+                .btn-pulse {
+                    animation: pulse 1.5s infinite;
+                }
+            </style>
+            
+            <a href="https://wa.me/6282120791879?text=Halo,%20saya%20melihat%20website%20Anda%20dan%20tertarik%20untuk%20kerjasama." 
+               target="_blank" 
+               class="btn btn-primary btn-rounded w-lg btn-pulse"
+               data-aos="zoom-in"
+               data-aos-duration="1000"
+               data-aos-easing="ease-out-back">
+                Hire Me
+            </a>
+            
         </div>
     </section>
 
@@ -736,27 +783,31 @@
         </div>
     </section>
 
-    <div class="section contact" id="contact">
+    <div class="section contacts" id="contact">
         <div id="map" class="map"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Send me a message</h4>
-                        <form action="">
+                        <form id="contact-form" action="https://formspree.io/f/myzeynal" method="POST">
                             <div class="form-group">
-                                <input class="form-control" type="text" placeholder="Name *" required>
+                                <input class="form-control" type="text" name="name" placeholder="Name *" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
+                                <input class="form-control" type="email" name="email" placeholder="Email *" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id=" placeholder=" Message *" rows="7"
+                                <input class="form-control" type="text" name="subject" placeholder="subject *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id=" placeholder=" Message *" rows="7"
                                     required></textarea>
                             </div>
                             <div class="form-group ">
                                 <button type="submit" class="form-control btn-rounded btn-primary">Send Message</button>
                             </div>
+                              
                         </form>
                     </div>
                 </div>
@@ -790,15 +841,15 @@
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/polanunu.dah?mibextid=ZbWKwL"><i class="ti-facebook"
+                            <li class="social-item"><a class="social-link text-dark" target="_blank" href="https://www.facebook.com/polanunu.dah?mibextid=ZbWKwL"><i class="ti-facebook"
                                         aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-stack-overflow"
+                            <li class="social-item"><a class="social-link text-dark" target="_blank" href="https://www.youtube.com/@alipolanunu4829"><i class="ti-youtube"
                                         aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/alii-polanunu/"><i class="ti-linkedin"
+                            <li class="social-item"><a class="social-link text-dark" target="_blank" href="https://www.linkedin.com/in/alii-polanunu/"><i class="ti-linkedin"
                                         aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/aliiwithahoodie/"><i class="ti-instagram"
+                            <li class="social-item"><a class="social-link text-dark" target="_blank" href="https://www.instagram.com/aliiwithahoodie/"><i class="ti-instagram"
                                         aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/alii16"><i class="ti-github"
+                            <li class="social-item"><a class="social-link text-dark" target="_blank" href="https://github.com/alii16"><i class="ti-github"
                                         aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
@@ -807,14 +858,37 @@
 
         </div>
     </div>
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light">
-                &copy;
-                <script>document.write(new Date().getFullYear())</script> Created With <i
-                    class="ti-light-bulb text-danger"></i> By <a href="https://www.instagram.com/aliiwithahoodie/" target="_blank"><span
-                        class="text-danger" title="Bootstrap 4 Themes and Dashboards">Ali Polanunu</span></a>
-            </p>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6282120791879?text=Halo,%20saya%20ingin%20bertanya" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.190z"/>
+        </svg>
+    </a>
+
+    <footer class="footer py-3 bg-dark">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 text-md-left text-center mb-2 mb-md-0">
+                    <p class="small mb-0 text-light">
+                        &copy; <script>document.write(new Date().getFullYear())</script> Created with 💡 by 
+                        <a href="https://www.instagram.com/aliiwithahoodie/" target="_blank" class="text-danger" title="Ali Polanunu">Ali Polanunu</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-right text-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#home" class="small text-light smooth-scroll">Home</a></li>
+                        <li class="list-inline-item"><a href="#about" class="small text-light smooth-scroll">About</a></li>
+                        <li class="list-inline-item"><a href="#resume" class="small text-light smooth-scroll">Resume</a></li>
+                        <li class="list-inline-item"><a href="#portfolio" class="small text-light smooth-scroll">Portfolio</a></li>
+                        <li class="list-inline-item"><a href="#blog" class="small text-light smooth-scroll">Blog</a></li>
+                        <li class="list-inline-item"><a href="#contact" class="small text-light smooth-scroll">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -827,8 +901,154 @@
 
     <!-- Isotope  -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+        
+    <script src="./assets/js/script.js"></script>
 
-    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="qErBGcIf-GHJOZRh7WfYE";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+
+    <script>
+        //typing effect start
+        const texts = ["Web Developer", "UI/UX Designer", "Student"];
+        let textIndex = 0;
+        let charIndex = 0;
+        const typingEffect = document.getElementById("typing-effect");
+
+        function typeText() {
+            typingEffect.textContent = texts[textIndex].substring(0, charIndex + 1);
+            charIndex++;
+            if (charIndex < texts[textIndex].length) {
+                setTimeout(typeText, 100); // kecepatan mengetik
+            } else {
+                setTimeout(eraseText, 1500); // jeda sebelum hapus
+            }
+        }
+
+        function eraseText() {
+            typingEffect.textContent = texts[textIndex].substring(0, charIndex - 1);
+            charIndex--;
+            if (charIndex > 0) {
+                setTimeout(eraseText, 50); // kecepatan menghapus
+            } else {
+                textIndex = (textIndex + 1) % texts.length; // looping teks
+                setTimeout(typeText, 500); // langsung ngetik lagi
+            }
+        }
+
+        typeText(); // mulai animasi
+        //typing effect end
+
+        //progress bar start
+        document.addEventListener("DOMContentLoaded", () => {
+            const progressBars = document.querySelectorAll(".progress-bar");
+
+            const animateProgressBar = (bar) => {
+                const value = bar.getAttribute("data-value");
+                bar.style.transition = "width 1.5s ease-in-out";
+                bar.style.width = value;
+            };
+
+            const isInViewport = (element) => {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                );
+            };
+
+            const checkProgressBars = () => {
+                progressBars.forEach((bar) => {
+                    if (isInViewport(bar) && bar.style.width === "0px") {
+                        animateProgressBar(bar);
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", checkProgressBars);
+            checkProgressBars(); // Cek saat pertama kali load
+        });
+        //progress bar end
+
+        // count-up start
+        function countUp(target, element, duration) {
+        let start = 0;
+        const increment = target / (duration / 16);
+        const timer = setInterval(() => {
+            start += increment;
+            if (start >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+            } else {
+            element.textContent = Math.floor(start);
+            }
+        }, 16);
+        }
+
+        // Observasi elemen
+        const observer2 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            const target = parseInt(entry.target.getAttribute("data-target"));
+            countUp(target, entry.target, 2000);
+            observer2.unobserve(entry.target); // Agar hanya berjalan sekali
+            }
+        });
+        });
+
+        // Terapkan observer ke semua elemen count
+        document.querySelectorAll(".count").forEach(el => {
+        observer2.observe(el);
+        });
+        // count-up end
+
+        // Form submit start
+        const contactForm = document.getElementById("contact-form");
+
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Tampilkan loading pakai SweetAlert2
+            Swal.fire({
+                title: "Sending...",
+                text: "Please wait while we process your mail.",
+                allowOutsideClick: false,
+                didOpen: () => {
+                    Swal.showLoading();
+                },
+            });
+
+            const url = e.target.action;
+            const formData = new FormData(contactForm);
+
+            fetch(url, {
+                method: "POST",
+                body: formData,
+                mode: "no-cors",
+            })
+            .then(() => {
+                window.location.href = "thankyou.html";
+            })
+            .catch(() => {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                });
+            });
+        });
+        // Form submit end
+
+    </script>
+    
 
 </body>
 
