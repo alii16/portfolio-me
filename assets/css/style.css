@@ -242,6 +242,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   margin: 0 16px;
 }
 
+.navbar-brand-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 
 .navbar-brand-mobile .mobile-header {
     color: #C45F90;
